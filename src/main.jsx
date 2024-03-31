@@ -12,6 +12,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     errorElement: <Error></Error>,
+    loader: () => fetch("../public/fakeDB.json"),
   },
 ]);
 

@@ -1,25 +1,35 @@
-import { CalculatorIcon } from "@heroicons/react/24/solid";
+import { useLoaderData } from "react-router-dom";
+import JobTitle from "./JobTitle";
+import Job from "./Job";
 
 const Jobs = () => {
+  const jobs = useLoaderData();
+
   return (
     <div>
       <div className="flex justify-center mt-5">
-        <div className=" text-center">
-          <h1 className="font-extrabold text-5xl">Job Category List</h1>
-          <p>
+        <div>
+          <h1 className="text-center font-extrabold text-5xl">
+            Job Category List
+          </h1>
+          <p className="text-center py-5">
             Explore thousands of job opportunities with all the information you
             need. Its your future
           </p>
-          <div className="flex flex-col md:flex-row gap-5 justify-between ">
-            <div className="bg-blue-200 p-10">
-              <div className="bg-slate-200 p-3 rounded-lg ">
-                <CalculatorIcon className="h-10 w-10 text-sky-600 "></CalculatorIcon>
-              </div>
-              <h1>Account & Finance</h1>
-              <p>300 Jobs Available</p>
-            </div>
-          </div>
+          <JobTitle></JobTitle>
         </div>
+      </div>
+      <div>
+        <h1 className="text-center font-extrabold text-5xl">Featured Jobs</h1>
+        <p className="text-center py-5">
+          Explore thousands of job opportunities with all the information you
+          need. Its your future
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-48">
+        {jobs.map((job) => (
+          <Job key={job.id} job={job}></Job>
+        ))}
       </div>
     </div>
   );
