@@ -1,21 +1,18 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white p-10">
-      <div className="grid grid-cols-5">
+      <div className="grid grid-cols-5 gap-10 px-5">
         <div>
           <h1 className="font-bold text-xl">CareerHub</h1>
           <p className="text-gray-300 mt-2">
             There are many variations of passages of Lorem Ipsum , but the
             majority have suffered alteration in some form.
           </p>
-          <div>
-            <FontAwesomeIcon
-              className="text-red"
-              icon="fa-brands fa-facebook"
-            />
+          <div className="flex gap-10 mt-5">
+            <i className="fa-brands fa-facebook text-2xl"></i>
+            <i className="fa-brands fa-square-twitter text-2xl"></i>
+            <i className="fa-brands fa-square-instagram text-2xl"></i>
           </div>
         </div>
         <div className="flex flex-col">

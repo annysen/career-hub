@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
@@ -6,8 +6,10 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center">
-      <h1>CareerHub</h1>
+    <nav className="flex justify-around items-center ">
+      <NavLink to="/">
+        <h1 className="text-2xl font-bold">CareerHub</h1>
+      </NavLink>
 
       <div className=" hidden md:flex justify-between items-center">
         <NavLink className="mx-5 text-gray-600" to="/statistics">
@@ -21,9 +23,7 @@ const Nav = () => {
         </NavLink>
       </div>
 
-      <button className="border bg-blue-300 text-white font-bold px-5 py-3 rounded-md">
-        Star Applying
-      </button>
+      <button className="btn-primary hidden md:flex">Star Applying</button>
 
       {/* mobile nav  */}
 
@@ -51,10 +51,8 @@ const Nav = () => {
                 <NavLink className="text-white" to="/blog">
                   Blog
                 </NavLink>
-                <div className="flex justify-center">
-                  <button className="  border bg-blue-300 text-white font-bold px-5 py-3 rounded-md">
-                    Star Applying
-                  </button>
+                <div className=" justify-center">
+                  <button className="  btn-primary">Star Applying</button>
                 </div>
               </nav>
             </div>
