@@ -4,12 +4,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from "./Components/Home.jsx";
+import Layout from "./Components/Layout.jsx";
+import Error from "./Components/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Layout />,
+    errorElement: <Error></Error>,
   },
 ]);
 
