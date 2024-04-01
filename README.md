@@ -1,8 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This is a react project.
+- In this project i have used react router, react pi chart.
+- For css i have used tailwind css library and for blogs page i have use daisyUI.
+- I have also used context api to show job and available job type in home page.
+- To do this project i have faced many problem like i have forgotten many things, but i have taken help from internet, chatgpt. I have use the suggestion after i understand it. May be its not copy coding.
+- Bullet point 3
+- Bullet point 3
+- Bullet point 3

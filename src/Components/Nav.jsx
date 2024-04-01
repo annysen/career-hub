@@ -9,7 +9,7 @@ const Nav = () => {
     <nav className="flex justify-around items-center ">
       <NavLink to="/">
         <h1 className="text-2xl md:text-5xl text-violet-900 font-bold">
-          CareerHub
+          Job Hunting
         </h1>
       </NavLink>
 
@@ -42,7 +42,7 @@ const Nav = () => {
             <div className="p-5 bg-violet-500 ">
               <div className=" flex items-center justify-between mb-4">
                 <Link className="text-white font-bold text-2xl">
-                  Career Hub
+                  Job Hunting
                 </Link>
                 <button onClick={() => setIsOpen(!isOpen)}>
                   <XMarkIcon className="h-6 w-6 text-white"></XMarkIcon>
