@@ -15,12 +15,12 @@ const JobDetails = () => {
   return (
     <>
       <section>
-        <h1 className="text-center text-5xl font-bold py-10 bg-violet-200 underline text-violet-900">
+        <h1 className="text-center text-2xl md:text-5xl font-bold py-10 bg-violet-200 underline text-violet-900">
           Job Details
         </h1>
       </section>
-      <div className="grid grid-cols-1 md:grid-cols-2  my-5 mx-10 gap-5">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-3  my-5 mx-10 gap-5 md:mx-40">
+        <div className="md:col-span-2">
           <h1 className="font-bold">Job Description:</h1>
           <p className="text-gray-500">{job.jobDescription}</p>
           <h1 className="font-bold">Job Responsibility:</h1>

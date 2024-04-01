@@ -8,7 +8,9 @@ const Nav = () => {
   return (
     <nav className="flex justify-around items-center ">
       <NavLink to="/">
-        <h1 className="text-2xl font-bold">CareerHub</h1>
+        <h1 className="text-2xl md:text-5xl text-violet-900 font-bold">
+          CareerHub
+        </h1>
       </NavLink>
 
       <div className=" hidden md:flex justify-between items-center">
