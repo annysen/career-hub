@@ -1,18 +1,14 @@
-import Nav from "./Nav";
 import cover from "../assets/cover.jpg";
 
 const Header = () => {
   return (
     <div className="bg-gray-100">
-      <div className="py-5">
-        <Nav></Nav>
-      </div>
       <section className="grid grid-cols-1 md:grid-cols-2  justify-items-center content-center">
         <div className="w-1/2 flex items-center">
           <div>
             <h1 className="text-black font-extrabold text-5xl">
               One Step Closer <br /> To Your <br />
-              <span className="text-blue-500">Dream Job</span>
+              <span className="text-violet-500">Dream Job</span>
             </h1>
 
             <p className="text-gray py-5">

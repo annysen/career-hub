@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply border bg-blue-300 text-white font-bold px-5 py-3 rounded-md
+    @apply border bg-violet-300 text-white font-bold px-5 py-3 rounded-md hover:bg-violet-600
 }

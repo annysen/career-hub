@@ -7,7 +7,14 @@
         "jobType": "Remote",
         "jobTime": "Full-time",
         "jobLocation": "Dhaka",
-        "salary": 70000
+        "salary": 70000,
+        "jobDescription": "This is a description of the Software Engineer position at Google.",
+        "jobResponsibility": "Responsibilities of this role include developing software solutions, collaborating with team members, and ensuring code quality.",
+        "educationalRequirements": "A Bachelor's degree in Computer Science or related field is required.",
+        "experiences": 2,
+        "address": "123 Main Street, Dhaka, Bangladesh",
+        "phone": "+1 (123) 456-7890",
+        "email": "example@google.com"
     },
     {
         "id": 2,
@@ -17,7 +24,14 @@
         "jobType": "Onsite",
         "jobTime": "Part-time",
         "jobLocation": "Chittagong",
-        "salary": 50000
+        "salary": 50000,
+        "jobDescription": "Description of the Data Analyst role at Twitter.",
+        "jobResponsibility": "Responsibilities include analyzing data, creating reports, and providing insights to improve business strategies.",
+        "educationalRequirements": "A Bachelor's degree in Data Science, Statistics, or related field is preferred.",
+        "experiences": 1,
+        "address": "456 Oak Street, Chittagong, Bangladesh",
+        "phone": "+1 (234) 567-8901",
+        "email": "example@twitter.com"
     },
     {
         "id": 3,
@@ -27,7 +41,14 @@
         "jobType": "Remote",
         "jobTime": "Full-time",
         "jobLocation": "Khulna",
-        "salary": 60000
+        "salary": 60000,
+        "jobDescription": "Description of the Frontend Developer role at Facebook.",
+        "jobResponsibility": "Responsibilities include developing user interfaces, optimizing performance, and collaborating with designers.",
+        "educationalRequirements": "A Bachelor's degree in Computer Science or related field is required.",
+        "experiences": 2,
+        "address": "789 Elm Street, Khulna, Bangladesh",
+        "phone": "+1 (345) 678-9012",
+        "email": "example@facebook.com"
     },
     {
         "id": 4,
@@ -37,7 +58,14 @@
         "jobType": "Onsite",
         "jobTime": "Full-time",
         "jobLocation": "Dhaka",
-        "salary": 65000
+        "salary": 65000,
+        "jobDescription": "Description of the UI/UX Designer role at Microsoft.",
+        "jobResponsibility": "Responsibilities include designing user interfaces, conducting user research, and creating wireframes and prototypes.",
+        "educationalRequirements": "A Bachelor's degree in Design or related field is required.",
+        "experiences": 3,
+        "address": "321 Pine Street, Dhaka, Bangladesh",
+        "phone": "+1 (456) 789-0123",
+        "email": "example@microsoft.com"
     },
     {
         "id": 5,
@@ -47,7 +75,14 @@
         "jobType": "Remote",
         "jobTime": "Full-time",
         "jobLocation": "Chittagong",
-        "salary": 75000
+        "salary": 75000,
+        "jobDescription": "Description of the Software Developer role at Amazon.",
+        "jobResponsibility": "Responsibilities include developing software solutions, debugging, and collaborating with cross-functional teams.",
+        "educationalRequirements": "A Bachelor's degree in Computer Science or related field is required.",
+        "experiences": 2,
+        "address": "123 Oak Street, Chittagong, Bangladesh",
+        "phone": "+1 (567) 890-1234",
+        "email": "example@amazon.com"
     },
     {
         "id": 6,
@@ -57,7 +92,14 @@
         "jobType": "Onsite",
         "jobTime": "Full-time",
         "jobLocation": "Dhaka",
-        "salary": 80000
+        "salary": 80000,
+        "jobDescription": "Description of the Product Manager role at Apple.",
+        "jobResponsibility": "Responsibilities include product strategy, roadmap planning, and collaborating with engineering and design teams.",
+        "educationalRequirements": "A Bachelor's degree in Business, Engineering, or related field is required.",
+        "experiences": 4,
+        "address": "456 Elm Street, Dhaka, Bangladesh",
+        "phone": "+1 (678) 901-2345",
+        "email": "example@apple.com"
     },
     {
         "id": 7,
@@ -67,7 +109,14 @@
         "jobType": "Remote",
         "jobTime": "Part-time",
         "jobLocation": "Khulna",
-        "salary": 55000
+        "salary": 55000,
+        "jobDescription": "Description of the Content Writer role at Netflix.",
+        "jobResponsibility": "Responsibilities include writing engaging content, conducting research, and adhering to brand guidelines.",
+        "educationalRequirements": "A Bachelor's degree in English, Journalism, or related field is preferred.",
+        "experiences": 1,
+        "address": "789 Pine Street, Khulna, Bangladesh",
+        "phone": "+1 (789) 012-3456",
+        "email": "example@netflix.com"
     },
     {
         "id": 8,
@@ -77,7 +126,14 @@
         "jobType": "Onsite",
         "jobTime": "Full-time",
         "jobLocation": "Chittagong",
-        "salary": 70000
+        "salary": 70000,
+        "jobDescription": "Description of the Marketing Manager role at LinkedIn.",
+        "jobResponsibility": "Responsibilities include developing marketing strategies, managing campaigns, and analyzing market trends.",
+        "educationalRequirements": "A Bachelor's degree in Marketing or related field is required.",
+        "experiences": 3,
+        "address": "321 Elm Street, Chittagong, Bangladesh",
+        "phone": "+1 (890) 123-4567",
+        "email": "example@linkedin.com"
     },
     {
         "id": 9,
@@ -87,7 +143,14 @@
         "jobType": "Remote",
         "jobTime": "Full-time",
         "jobLocation": "Dhaka",
-        "salary": 85000
+        "salary": 85000,
+        "jobDescription": "Description of the Hardware Engineer role at Tesla.",
+        "jobResponsibility": "Responsibilities include designing hardware components, testing prototypes, and collaborating with cross-functional teams.",
+        "educationalRequirements": "A Bachelor's degree in Electrical Engineering or related field is required.",
+        "experiences": 5,
+        "address": "123 Pine Street, Dhaka, Bangladesh",
+        "phone": "+1 (901) 234-5678",
+        "email": "example@tesla.com"
     },
     {
         "id": 10,
@@ -97,6 +160,13 @@
         "jobType": "Onsite",
         "jobTime": "Part-time",
         "jobLocation": "Chittagong",
-        "salary": 30000
+        "salary": 30000,
+        "jobDescription": "Description of the Driver role at Uber.",
+        "jobResponsibility": "Responsibilities include driving safely, providing excellent customer service, and maintaining vehicle cleanliness.",
+        "educationalRequirements": "A valid driver's license and clean driving record are required.",
+        "experiences": 0,
+        "address": "456 Pine Street, Chittagong, Bangladesh",
+        "phone": "+1 (012) 345-6789",
+        "email": "example@uber.com"
     }
 ]

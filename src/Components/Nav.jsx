@@ -18,8 +18,8 @@ const Nav = () => {
         <NavLink className="mx-5 text-gray-600" to="/jobs">
           Applied Jobs
         </NavLink>
-        <NavLink className="mx-5 text-gray-600" to="/blog">
-          Blog
+        <NavLink className="mx-5 text-gray-600" to="/blogs">
+          Blogs
         </NavLink>
       </div>
 

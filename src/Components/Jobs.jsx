@@ -1,9 +1,22 @@
+import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import JobTitle from "./JobTitle";
 import Job from "./Job";
 
 const Jobs = () => {
-  const jobs = useLoaderData();
+  const allJobs = useLoaderData();
+  const [showAll, setShowAll] = useState(false);
+  const [jobs, setJobs] = useState(allJobs.slice(0, 4));
+
+  const handleShowAll = () => {
+    setShowAll(true);
+    setJobs(allJobs);
+  };
+
+  const handleShowLess = () => {
+    setShowAll(false);
+    setJobs(allJobs.slice(0, 4));
+  };
 
   return (
     <div>
@@ -14,7 +27,7 @@ const Jobs = () => {
           </h1>
           <p className="text-center py-5">
             Explore thousands of job opportunities with all the information you
-            need. Its your future
+            need. It's your future.
           </p>
           <JobTitle></JobTitle>
         </div>
@@ -23,7 +36,7 @@ const Jobs = () => {
         <h1 className="text-center font-extrabold text-5xl">Featured Jobs</h1>
         <p className="text-center py-5">
           Explore thousands of job opportunities with all the information you
-          need. Its your future
+          need. It's your future.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-48">
@@ -31,6 +44,19 @@ const Jobs = () => {
           <Job key={job.id} job={job}></Job>
         ))}
       </div>
+      {!showAll ? (
+        <div className="flex justify-center mt-5">
+          <button className="btn-primary mb-5" onClick={handleShowAll}>
+            Show All
+          </button>
+        </div>
+      ) : (
+        <div className="flex justify-center mt-5">
+          <button className="btn-primary mb-5" onClick={handleShowLess}>
+            Show Less
+          </button>
+        </div>
+      )}
     </div>
   );
 };

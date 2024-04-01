@@ -6,13 +6,42 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "./Components/Layout.jsx";
 import Error from "./Components/Error.jsx";
+import Statistics from "./Statistics.jsx";
+import Home from "./Components/Home.jsx";
+import AppliedJobs from "./Components/AppliedJobs.jsx";
+import Blogs from "./Components/Blogs.jsx";
+import JobDetails from "./Components/JobDetails.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
     errorElement: <Error></Error>,
-    loader: () => fetch("../public/fakeDB.json"),
+
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+        loader: () => fetch("../public/fakeDB.json"),
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
+      },
+      {
+        path: "/jobs",
+        element: <AppliedJobs />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "/jobs/:id",
+        element: <JobDetails />,
+        loader: () => fetch("../public/fakeDB.json"),
+      },
+    ],
   },
 ]);
 
