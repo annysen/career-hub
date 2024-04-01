@@ -1,4 +1,4 @@
-import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import { CurrencyBangladeshiIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
@@ -27,7 +27,7 @@ const Job = ({ job }) => {
           <small>{jobLocation}</small>
         </div>
         <div className="flex gap-1 items-center">
-          <CurrencyDollarIcon className="h-6 w-6 text-gray-500"></CurrencyDollarIcon>
+          <CurrencyBangladeshiIcon className="h-6 w-6 text-gray-500"></CurrencyBangladeshiIcon>
           <small>{salary} BDT</small>
         </div>
       </div>

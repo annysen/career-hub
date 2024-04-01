@@ -29,14 +29,16 @@ const Nav = () => {
 
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
-          <Bars3BottomRightIcon className="h-6 w-6 text-blue-500" />
+          <Bars3BottomRightIcon className="h-6 w-6 text-violet-500" />
         </button>
 
         {isOpen && (
           <div className="absolute top-0 left-0 w-full z-10">
-            <div className="p-5 bg-blue-500 ">
+            <div className="p-5 bg-violet-500 ">
               <div className=" flex items-center justify-between mb-4">
-                <Link className="text-white font-bold">Career Hub</Link>
+                <Link className="text-white font-bold text-2xl">
+                  Career Hub
+                </Link>
                 <button onClick={() => setIsOpen(!isOpen)}>
                   <XMarkIcon className="h-6 w-6 text-white"></XMarkIcon>
                 </button>
