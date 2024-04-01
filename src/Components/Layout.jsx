@@ -4,7 +4,7 @@ import Nav from "./Nav";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="max-w-full ">
       <div className="py-5">
         <Nav></Nav>
       </div>

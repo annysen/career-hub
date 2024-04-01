@@ -2,8 +2,8 @@ import cover from "../assets/cover.jpg";
 
 const Header = () => {
   return (
-    <div className="bg-gray-100">
-      <section className="grid grid-cols-1 md:grid-cols-2  justify-items-center content-center">
+    <div className="bg-gray-100 ">
+      <section className="grid grid-cols-1 md:grid-cols-2  justify-items-center ">
         <div className="w-1/2 flex items-center">
           <div>
             <h1 className="text-black font-extrabold text-5xl">
