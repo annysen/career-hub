@@ -14,6 +14,9 @@ const Nav = () => {
       </NavLink>
 
       <div className=" hidden md:flex justify-between items-center">
+        <NavLink className="mx-5 text-gray-600" to="/">
+          Home
+        </NavLink>
         <NavLink className="mx-5 text-gray-600" to="/statistics">
           Statistics
         </NavLink>

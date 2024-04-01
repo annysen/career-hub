@@ -6,11 +6,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "./Components/Layout.jsx";
 import Error from "./Components/Error.jsx";
-import Statistics from "./Statistics.jsx";
+
 import Home from "./Components/Home.jsx";
 import AppliedJobs from "./Components/AppliedJobs.jsx";
 import Blogs from "./Components/Blogs.jsx";
 import JobDetails from "./Components/JobDetails.jsx";
+import Statistics from "./Components/Statistics.jsx";
 
 const router = createBrowserRouter([
   {
