@@ -15,6 +15,11 @@ const Job = ({ job }) => {
   // console.log(job);
   return (
     <div className="border-2 rounded p-5 mx-5">
+      <img
+        className="h-10 w-10 md:h-20 md:w-20 mb-5  border rounded"
+        src={logo}
+        alt=""
+      />
       <h1 className="font-bold">{position}</h1>
       <p>{companyName}</p>
       <div className="mt-5 ">
