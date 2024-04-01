@@ -1,10 +1,30 @@
-import React from "react";
+import { useLoaderData } from "react-router-dom";
+import { getAppliedJobs } from "./Utility/fakedb";
+import AppliedJob from "./AppliedJob";
 
 const AppliedJobs = () => {
+  const getJobs = getAppliedJobs();
+  const jobIdArray = Object.keys(getJobs).map((key) => parseInt(key));
+
+  const allJobs = useLoaderData();
+
+  const appliedJobsArray = allJobs.filter((job) => {
+    return !jobIdArray.includes(job.id);
+  });
+
   return (
-    <div>
-      <h1>Applied Jobs</h1>
-    </div>
+    <>
+      <section>
+        <h1 className="text-center text-2xl md:text-5xl font-bold py-10 bg-violet-200 underline text-violet-900">
+          Applied Jobs
+        </h1>
+      </section>
+      <div>
+        {appliedJobsArray.map((job) => (
+          <AppliedJob key={job.id} job={job}></AppliedJob>
+        ))}
+      </div>
+    </>
   );
 };
 

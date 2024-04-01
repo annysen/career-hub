@@ -6,6 +6,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/solid";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToDb } from "./Utility/fakedb";
 
 const JobDetails = () => {
   const allJobs = useLoaderData();
@@ -62,7 +63,9 @@ const JobDetails = () => {
               <p>{job.address}</p>
             </div>
           </div>
-          <button className="btn-primary mt-3">Apply Now</button>
+          <button onClick={() => addToDb(id)} className="btn-primary mt-3">
+            Apply Now
+          </button>
         </div>
       </div>
     </>
