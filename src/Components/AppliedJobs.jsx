@@ -5,12 +5,21 @@ import AppliedJob from "./AppliedJob";
 const AppliedJobs = () => {
   const getJobs = getAppliedJobs();
   const jobIdArray = Object.keys(getJobs).map((key) => parseInt(key));
+  console.log(getJobs);
 
   const allJobs = useLoaderData();
 
-  const appliedJobsArray = allJobs.filter((job) => {
-    return !jobIdArray.includes(job.id);
-  });
+  let appliedJobsArray;
+
+  if (jobIdArray.length > 0) {
+    appliedJobsArray = allJobs.filter((job) => {
+      return jobIdArray.includes(job.id);
+    });
+  } else {
+    appliedJobsArray = [];
+  }
+
+  console.log(appliedJobsArray);
 
   return (
     <>

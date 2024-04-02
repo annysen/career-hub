@@ -13,6 +13,7 @@ const AppliedJob = ({ job }) => {
     salary,
     id,
   } = job;
+  console.log(job);
   return (
     <div className="grid grid-cols-5 items-center border-2 rounded p-5 mx-5 mx-10 my-5 md:mx-48 md:my-10">
       <img className="h-10 w-10 md:h-32 md:w-32" src={logo} alt="" />

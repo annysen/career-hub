@@ -12,7 +12,7 @@ const Job = ({ job }) => {
     salary,
     id,
   } = job;
-  // console.log(job);
+  console.log(job);
   return (
     <div className="border-2 rounded p-5 mx-5">
       <img
