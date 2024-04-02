@@ -2,13 +2,14 @@ import { createContext, useState } from "react";
 import Header from "./Header";
 import Jobs from "./Jobs";
 export const JobContext = createContext(0);
+import accountImage from "../assets/image/icon/account.png";
 
 const Home = () => {
   const jobArray = [
     {
       jobType: "Account & Finance",
       jobCount: 300,
-      iconLink: "../assets/image/icon/account.png",
+      iconLink: accountImage,
     },
     {
       jobType: "Software Development",
