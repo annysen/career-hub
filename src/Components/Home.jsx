@@ -2,10 +2,10 @@ import { createContext, useState } from "react";
 import Header from "./Header";
 import Jobs from "./Jobs";
 export const JobContext = createContext(0);
-import accountImage from "../assets/image/icon/account.png";
-import softImg from "../assets/image/icon/devloper.jpg";
-import markImg from "../assets/image/icon/marketing.png";
-import custImg from "../assets/image/icon/Customer.jpg";
+import accountImage from "/image/icon/account.png";
+import softImg from "/image/icon/devloper.jpg";
+import markImg from "/image/icon/marketing.png";
+import custImg from "/image/icon/Customer.jpg";
 
 const Home = () => {
   const jobArray = [
