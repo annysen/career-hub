@@ -3,7 +3,7 @@ import sad from "../assets/sad.svg";
 
 const Error = () => {
   const { error, status } = useRouteError();
-  // console.log(status);
+  console.log(error.message, status);
 
   return (
     <div className="flex flex-col justify-center items-center h-lvh">
